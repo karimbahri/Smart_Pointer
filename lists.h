@@ -11,12 +11,13 @@
  * Description: singly linked list node structure
  * for Holberton project
  */
-typedef struct listint_s
+typedef struct list_s
 {
 	void *value;
-	struct listint_s *next;
-} listint_t;
+	struct list_s *next;
+} list_t;
 
 /*------------------------------PROTOTYPES------------------------------*/
-
+list_t *add_node(list_t **head, void *v);
+void free_list(list_t **head);
 #endif
